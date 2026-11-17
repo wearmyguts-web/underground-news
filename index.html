@@ -3,112 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UNDERGROUND OVERDRIVE // Music News</title>
+    <title>UNDERGROUND ARCHIVE // Global Intel Feed</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Syncopate:wght@700&display=swap" rel="stylesheet">
+    <link href="https://googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Syncopate:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Header & Marquee -->
+    <!-- Top Grid Banner & Navigation Bar -->
     <header>
-        <div class="logo">UG_OVERDRIVE</div>
-        <nav>
-            <a href="#" class="active">NEWS</a>
-            <a href="#" id="open-cms-btn" style="color: var(--accent-red);">[ OPEN CMS ]</a>
+        <div class="brand-header">
+            <div class="logo-main">UG_ARCHIVE // 2026</div>
+            <div class="system-status"><span class="pulse-indicator"></span> FEED ACTIVE</div>
+        </div>
+        <nav class="nav-control">
+            <button class="nav-tab active" data-target="feed-view">INTEL FEED</button>
+            <button class="nav-tab" data-target="poll-view">SCENE POLLS</button>
+            <button class="nav-tab special-action-btn" id="open-cms-btn">[ BROADCAST RAW DATA ]</button>
         </nav>
-        <div class="ticker-wrap">
-            <div class="ticker">
-                <span>+++ NETTSPEND DROPS NEW SINGLE +++ OSAMASON TOUR DATES ANNOUNCED +++ CHE WORKING ON NEW ALBUM +++ FAKEMINK SPOTTED IN THE STUDIO +++ NINE VICIOUS COOKING NEXT SINGLE +++</span>
+        <div class="marquee-ticker-container">
+            <div class="marquee-ticker-stream">
+                <span>+++ FAKEMINK DOMINATING LONDON CIRCUITS +++ BLEOOD UNLEASHES MAXIMALIST TRAP ARCHIVE +++ XAVIERSOBASED RUMORED COLLAB TAPE +++ YHAPOJJ SPARKING SEARCH TREND SPIKES +++ SLAYR PREPARING MOSHPIT ANTHEMS +++ NETTSPEND IN THE STUDIO +++ OSAMASON TOUR SOLD OUT +++ CHE SHATTERING SOUNDSCAPES +++ NINE VICIOUS PROTOCOL ACTIVE +++</span>
             </div>
         </div>
     </header>
 
-    <!-- Main Content Layout -->
-    <main class="container">
+    <!-- Main Central Operations Center -->
+    <main class="main-matrix-grid">
         
-        <!-- News Feed & Comments -->
-        <div class="feed-column">
-            <section class="feed-section">
-                <h2 class="section-title">LATEST INTEL</h2>
-                <div class="news-grid" id="news-feed">
-                    <!-- Dynamic Articles will inject here via JS -->
+        <!-- Tab Column Interface Wrapper -->
+        <div class="primary-content-column">
+            
+            <!-- Tab View 1: Main News Intel Grid Feed -->
+            <div id="feed-view" class="tab-panel active">
+                <h2 class="module-header-title">RAW INTELLIGENCE FEED</h2>
+                <div class="news-matrix-feed" id="news-feed-container">
+                    <!-- JavaScript Dynamic Injections Deploy Here -->
                 </div>
-            </section>
+            </div>
 
-            <!-- Dynamic Comment Section -->
-            <section class="comments-section">
-                <h2 class="section-title">UNDERGROUND DISCORD / DEBATES</h2>
-                <div class="comment-box">
-                    <form id="comment-form">
-                        <input type="text" id="comment-user" placeholder="ANONYMOUS_ALIAS" required>
-                        <textarea id="comment-text" placeholder="Drop your take... Nettspend washed? Osamason carrying?" required></textarea>
-                        <button type="submit">POST INTEL</button>
+            <!-- Tab View 2: Scene Voting Poll Matrix -->
+            <div id="poll-view" class="tab-panel">
+                <h2 class="module-header-title">UNDERGROUND TRACK OF THE WEEK VOTING MATRIX</h2>
+                <div class="poll-matrix-box">
+                    <p class="poll-desc-text">Select a track below to register your vote directly into the local ledger. Double votes locked by session rules.</p>
+                    <div class="poll-options-stack" id="poll-options-container">
+                        <!-- Dynamic Poll Progress Rows Inject Here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Global Interactive Discussion Layer -->
+            <section class="discussion-matrix-panel">
+                <h2 class="module-header-title">BOARD TRANSMISSIONS / ANONYMOUS DEBATES</h2>
+                <div class="comment-submission-block">
+                    <form id="matrix-comment-form">
+                        <div class="form-row-split">
+                            <input type="text" id="comment-alias" placeholder="USER_ALIAS // ANONYMOUS" required>
+                        </div>
+                        <textarea id="comment-message" placeholder="Type your take... Fakemink washed? Bleood carrying? Xaviersobased ahead of the curve? Drop the real intel." required></textarea>
+                        <button type="submit" class="submit-action-btn">TRANSMIT TO DISCORD</button>
                     </form>
-                    <div id="comments-container">
-                        <!-- Comments will inject here via JS -->
+                    <div class="comments-output-stream" id="comments-output-wrapper">
+                        <!-- User Comments Stream Inject Here -->
                     </div>
                 </div>
             </section>
         </div>
 
-        <!-- Sidebar Layout -->
-        <aside class="sidebar">
-            <div class="sidebar-block">
-                <h2 class="section-title">TRENDING RADAR</h2>
-                <ul class="trending-list">
-                    <li><span class="rank">01</span><div class="trend-info"><h4>Nettspend</h4><p>142K search spikes this week</p></div></li>
-                    <li><span class="rank">02</span><div class="trend-info"><h4>OsamaSon</h4><p>Flirting with mainstream crossover</p></div></li>
-                    <li><span class="rank">03</span><div class="trend-info"><h4>Che</h4><p>New music video hitting 1M views</p></div></li>
-                    <li><span class="rank">04</span><div class="trend-info"><h4>Fakemink</h4><p>Leaked track trending heavily</p></div></li>
-                    <li><span class="rank">05</span><div class="trend-info"><h4>Nine Vicious</h4><p>Gearing up for album rollout</p></div></li>
+        <!-- Sidebar Layout Component Panel Matrix -->
+        <aside class="sidebar-matrix-column">
+            
+            <!-- Sidebar Component A: Trending Search Radar Ledger -->
+            <div class="sidebar-data-module">
+                <h2 class="module-header-title">TRENDING SEARCH RADAR</h2>
+                <ul class="radar-ranking-ledger">
+                    <li><span class="ledger-index">01</span><div class="ledger-meta"><h4>Fakemink</h4><p>UK Road Trap / Algerian Experimental</p></div></li>
+                    <li><span class="ledger-index">02</span><div class="ledger-meta"><h4>Bleood</h4><p>Atlanta Industrial / Rage maximalist</p></div></li>
+                    <li><span class="ledger-index">03</span><div class="ledger-meta"><h4>Xaviersobased</h4><p>Plugg / Internet-Native Jerk</p></div></li>
+                    <li><span class="ledger-index">04</span><div class="ledger-meta"><h4>Yhapojj</h4><p>Melodic Plugg / Search Velocity up +42%</p></div></li>
+                    <li><span class="ledger-index">05</span><div class="ledger-meta"><h4>Slayr</h4><p>Metal-Trap / Distorted Moshpit Rollouts</p></div></li>
                 </ul>
             </div>
 
-            <!-- Functional Audio Player Block -->
-            <div class="sidebar-block player-block">
-                <h2 class="section-title">CURRENT ROTATION</h2>
-                <div class="mini-player">
-                    <div class="player-info">
-                        <strong id="track-title">Vampire Protocol</strong>
-                        <span id="track-artist">Nine Vicious</span>
+            <!-- Sidebar Component B: Interactive Audio Matrix System -->
+            <div class="sidebar-data-module highlight-module">
+                <h2 class="module-header-title">CURRENT AUDIO ROTATION</h2>
+                <div class="audio-control-interface">
+                    <div class="audio-track-meta">
+                        <span id="player-track-name">TERRIFIED</span>
+                        <span id="player-artist-name">Fakemink</span>
                     </div>
-                    <div class="player-controls">
-                        <audio id="audio-element" src="https://soundhelix.com"></audio>
-                        <button class="play-btn" id="audio-play-btn">▶ PLAY</button>
-                    </div>
+                    <audio id="core-audio-element" src="https://soundhelix.com"></audio>
+                    <button class="audio-trigger-btn" id="global-audio-toggle">▶ STREAM PREVIEW</button>
                 </div>
-                <div class="playlist-selector">
-                    <p style="font-size:0.75rem; margin-top:1rem; color:var(--text-muted);">SELECT SOURCE FEED:</p>
-                    <button class="track-select active" data-src="https://soundhelix.com" data-title="Vampire Protocol" data-artist="Nine Vicious">Nine Vicious - Vampire Protocol</button>
-                    <button class="track-select" data-src="https://soundhelix.com" data-title="Onyx Rage" data-artist="Nettspend">Nettspend - Onyx Rage</button>
-                    <button class="track-select" data-src="https://soundhelix.com" data-title="Flex Up" data-artist="OsamaSon">OsamaSon - Flex Up</button>
+                <div class="track-routing-selector-stack">
+                    <p class="selector-heading-label">NETWORK SOURCE FEEDS:</p>
+                    <button class="routing-row-btn active" data-url="https://soundhelix.com" data-title="TERRIFIED" data-artist="Fakemink">Fakemink - TERRIFIED (UK)</button>
+                    <button class="routing-row-btn" data-url="https://soundhelix.com" data-title="PROTAGONIST" data-artist="Bleood">Bleood - PROTAGONIST (ATL)</button>
+                    <button class="routing-row-btn" data-url="https://soundhelix.com" data-title="PATCHWORK" data-artist="Xaviersobased">Xaviersobased - PATCHWORK (NYC)</button>
+                    <button class="routing-row-btn" data-url="https://soundhelix.com" data-title="MY EVERYTHIN" data-artist="Yhapojj">Yhapojj - MY EVERYTHIN (OH)</button>
                 </div>
             </div>
         </aside>
     </main>
 
-    <!-- Content Management System Overlay Dashboard -->
-    <div id="cms-overlay" class="cms-modal">
-        <div class="cms-content">
-            <span class="close-cms" id="close-cms-btn">&times;</span>
-            <h2 class="section-title">CREATOR TOOLKIT (CMS)</h2>
-            <form id="cms-form">
-                <input type="text" id="cms-title" placeholder="Article Title (e.g. Nettspend Spikes Billboard charts...)" required>
-                <input type="text" id="cms-badge" placeholder="Badge Category (e.g. BREAKING, NEW DROPS, RUMOR)" required>
-                <input type="url" id="cms-image" placeholder="Image URL (Unsplash or direct links)" required>
-                <textarea id="cms-body" placeholder="Write the main story leak here..." required></textarea>
-                <div class="cms-row">
-                    <label><input type="checkbox" id="cms-featured"> Feature Article (Make it double-wide layout)</label>
+    <!-- Creator Broadcast Control Toolkit Overlay Panel (CMS) -->
+    <div id="cms-modal-overlay" class="dashboard-modal-overlay">
+        <div class="modal-dashboard-wrapper">
+            <span class="dismiss-modal-trigger" id="close-cms-btn">&times;</span>
+            <h2 class="module-header-title">BROADCAST TOOLKIT (CMS MODAL)</h2>
+            <form id="modal-cms-form">
+                <div class="form-group-block">
+                    <input type="text" id="cms-input-title" placeholder="Intel Headline (e.g. Bleood Announces Tour Lineup...)" required>
                 </div>
-                <button type="submit">BROADCAST TO NEWSFEED</button>
+                <div class="form-group-block-row">
+                    <input type="text" id="cms-input-badge" placeholder="Genre / Movement (e.g. PLUGG, RAGE, DRIFT, LONDON)" required>
+                    <input type="text" id="cms-input-image" placeholder="Image Keyword or Direct URL (leave empty for placeholder auto-gen)">
+                </div>
+                <div class="form-group-block">
+                    <textarea id="cms-input-body" placeholder="Provide full breaking intelligence background, scene rumors, or leaked track information here..." required></textarea>
+                </div>
+                <div class="checkbox-alignment-wrapper">
+                    <label class="custom-chk-label"><input type="checkbox" id="cms-input-featured"> Priority Broadcast (Double-wide primary feature card layout)</label>
+                </div>
+                <button type="submit" class="broadcast-action-btn">INJECT INTO NEWS NETWORK</button>
             </form>
         </div>
     </div>
 
+    <!-- Archive Footer Grid Element -->
     <footer>
-        <p>&copy; 2026 UG_OVERDRIVE. Built for the Underground Scene.</p>
+        <div class="footer-grid-wrap">
+            <p>UG_ARCHIVE ENGINE // NETWORK PLATFORM DESIGNED FOR THE PERIPHERY</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
